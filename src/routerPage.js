@@ -12,9 +12,10 @@ class RouterPage extends Component {
         <Router>
           <NavBAr />
           <Switch>
-            <Route path="/pages/home/home" exact component={Home} />
-            <Route path="/pages/about/about" exact component={About} />
-            <Route path="/pages/contact/contact" exact component={Contact} />
+            <Route exact path="/" componenet={Home} />
+            <Route exact path="/pages/home/home" component={Home} />
+            <Route exact path="/pages/about/about" component={About} />
+            <Route exact path="/pages/contact/contact" component={Contact} />
           </Switch>
         </Router>
       </div>
